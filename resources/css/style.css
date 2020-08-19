@@ -1,0 +1,408 @@
+/*=====================
+
+Project name : 
+Designer     :
+email        :
+========================*/
+/* Documentation
+
+>>>Section<<<
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+=========================*/
+
+
+
+/* basic setup */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Pacifico', cursive;
+}
+section{
+    padding: 60px 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+.navbar{
+    background: #ecf0f1;
+}
+.navbar ul li a {
+    color: #111;
+    font-size: 15px;
+    font-weight: 500;
+    margin:  0 15px;
+    transition: .6s;
+}
+.navbar ul li a:hover{
+    color: #2ecc71;
+}
+
+.hero-section{
+    background-image: url('../../resources/images/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    position: relative;
+}
+.hero-section::before{
+    position: absolute;
+    content: '';
+    background: rgba(44, 58, 71, .3);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.hero-content{
+    padding: 170px 0;
+}
+.hero-content h1 span{
+    font-size: 52px;
+}
+.hero-content h1{
+    text-transform: capitalize;
+}
+
+.hero-content h4{
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .8px;
+}
+.hero-content p{
+    padding: 15px 0;
+}
+.second-section{
+    background: #F7F7F7;
+}
+.second-section h2{
+    font-size: 38px;
+    font-weight: 500;
+}
+.second-section p{
+    font-size: 16px;
+    margin: 12px 0;
+    padding-top: 10px;
+}
+.second-section .options {
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+}
+.second-section .options .icon{
+    color: #2ecc71;
+    margin-right: 15px;
+}
+
+.second-section .options ul li{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.content h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.content p{
+    font-size: 16px;
+    padding: 10px 0;
+}
+.popular-courses{
+
+}
+.popular-courses .courses{
+    margin-top: 40px;
+}
+.popular-courses .img-box{
+    position: relative;
+    overflow: hidden;
+}
+.popular-courses img{
+    transition: .6s;
+}
+.popular-courses img:hover{
+    transform: scale(1.3);
+}
+.popular-courses .img-box .tag{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;;
+    background: #2ecc71;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+}
+.popular-courses h5{
+    font-size: 21px;
+}
+.popular-courses span{
+    font-size: 15px;
+}.popular-courses p{
+    font-size: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 8px
+}
+.popular-courses ul li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.popular-courses ul li .fa{
+    color: #f1c40f;
+}
+.view-more-btn{
+    margin-top: 25px;
+}
+.factor {
+    background:linear-gradient(0deg, rgba(149, 165, 166, 0.09), rgba(149, 165, 166, 0.33)), url('../../resources/images/hero.jpg');
+  background-size:cover;
+     background-size: cover;
+     background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.factor .content h2{
+    color: #fff;
+}
+
+.factor h5{
+    color: #fff;
+    font-size: 44px;
+}
+.factor span{
+    color: #fff;
+}
+.html{}
+.html img{
+    margin-bottom: 10px;
+}
+.html h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+}
+.html p{
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.teacher-section {
+    background: #FAFAFA;
+}
+.teacher-section .teachers{
+    margin-top: 35px;
+}
+.teacher-section .teachers h5{
+    margin-bottom: 4px;
+}
+.teacher-section p{
+    font-size: 14px;
+}
+.teacher-section ul {
+    display: flex;
+    justify-content: center;
+}
+.teacher-section ul li {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    line-height: 2.5;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+     transition: .6s;
+}
+.teacher-section ul li  a{
+    color: #9F9F9F;
+}
+.teacher-section ul li:hover{
+    border-color: #2ecc71;
+}
+.teacher-section .card{
+    transition: .6s;
+}
+.teacher-section .card:hover{
+    margin-top: -8px;
+}
+.library-section .library{
+    margin-top: 30px;
+}
+.library-section h5{
+    font-weight: 500;
+}
+.library-section ul{
+    margin-bottom: 5px;
+}
+.library-section ul li{
+    display: inline-block;
+    text-align: center;
+}
+.library-section ul li .fa{
+    color: #f1c40f;
+}
+.library-section span{
+    font-size: 15px ;
+    margin-right: 15px;
+}
+.testimonial-section{
+    background: #F7F7F7;
+}
+.testimonial-section .testimonial{
+    margin-top: 60px;
+}
+.testimonial-section .img-box{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: red;
+    overflow: hidden;
+    margin-top: -38px;
+}
+.testimonial-section img{
+    width: 100%;
+}
+.testimonial-section  p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.testimonial-section  ul li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.testimonial-section ul li .fa{
+    color: #f1c40f;
+}
+.testimonial-section h5{
+    font-size: 20px;
+    margin: 8px 0;
+} 
+.testimonial-section  span{
+    font-size: 12px;
+    padding-bottom: 35px;
+}
+.portfolio-section{}
+.portfolio-section .portfolio {
+    margin-top: 25px;
+}
+.portfolio-section .tabbar{
+    margin-bottom: 20px;
+}
+.portfolio-section .tabbar ul li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #111;
+    font-weight: 500;
+    transition: .6s;
+}
+.portfolio-section .tabbar ul li a:hover{
+    color: #2ecc71;
+}
+.portfolio-section span{
+    display: inline-block;
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 10px 0 ;
+}
+.portfolio-section h5{
+    font-size: 20px;
+    color: #111;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.portfolio-section .card{
+    box-shadow: 2px 2px 5px #ccc;
+}
+.latest-news{}
+.latest-news .news{
+    margin-top: 30px;
+}
+.latest-news .img-box{
+    position: relative;
+    overflow: hidden;
+}
+.latest-news .img-box img{
+    transition: .6s;
+}
+.latest-news .img-box img:hover{
+    transform: scale(1.3);
+}
+.latest-news .img-box .tag{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.85);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.latest-news .tag span{
+    font-weight: 500;
+    font-size: 14px;
+}
+.latest-news .card-body span{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.latest-news .card-body p{
+    font-size: 14px;
+    text-align: center;
+}
+.latest-news h5{
+    margin-top: 10px;
+}
+.top-bar{
+    background: #343B4D;
+    color: #fff;
+}
+.top-bar p{
+    font-size: 14px;
+}
+.top-bar h4{
+    font-size: 20px;
+}
+.top-bar ul{
+    margin-top: 20px;
+}
+.top-bar ul li a{
+    color: #95a5a6;
+    font-size: 14px;
+    transition: .6s;
+}
+.top-bar ul li a:hover{
+    color: #2ecc71;
+}
+footer{
+    padding: 35px 0;
+    color: #fff;
+    background:#242936;
+}
